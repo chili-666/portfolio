@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/start.css">
+        <link rel="stylesheet" href="css/chart.css">
+        <link href="https://fonts.googleapis.com/css?family=Caveat|Quicksand&display=swap" rel="stylesheet">
+        
+        <script src="js/darkLightMode.js"></script>
+        <script src="js/project.js"></script>
+        <script src="js/english.js"></script>
+        <script src="js/german.js"></script>
+        <script src="js/buttontestList.js"></script>
+        <script src="js/projectListEN.js"></script>
+        <script src="js/language.js"></script>
+    </head>
+    <body class="white">
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <div class="header white">
+          <button class="button" onclick="darkMode('.white','dark')" id="dark">DarkMode</button>
+          <button onclick="lightMode('.dark','white')" class="button noshow" id="light">LightMode</button>
+          <button onclick="english(englisch)" class="button" id="EN">EN</button>
+          <button onclick="german(deutsch)"class="button noshow" id="DE">DE</button></div>
+<div class="hero">
+  <div class="background white">
+   <span></span>
+   <span></span>
+   <span></span>
+   <span></span>
+   <span></span>
+   <span></span>
+   <span></span>
+   <span></span>
+   <span></span>
+   <span></span>
+   <span></span>
+   <span></span>
+   <span></span>
+   <span></span>
+   <span></span>
+   <span></span>
+   <span></span>
+   <span></span>
+   <span></span>
+   <span></span>
+   <span></span>
+   <span></span>
+   <span></span>
+   <span></span>
+   <span></span>
+   <span></span>
+   <span></span>
+   <span></span>
+   <span></span>
+   <span></span>
+   <span></span>
+</div>
+  <h1 id="Name">Luis Wäsler</h1>
+  <h3>Marketeer | Sales Rep | Web Developer</h3>
+  <h2>"Jack of all trades, master of none,
+though oftentimes better than master of one"</h2>
+</div>
+ 
+<section class="white">
+<section class="headline"><h2 id="projects">Projekte</h2></section>
+<section class="flex-container filter">
+  <section class="view" id="view">Anzeige: 
+    <button onclick="setView('.tileContainer', 'small')">small</button>
+    <button onclick="setView('.tileContainer', 'large')">large</button>
+    <button onclick="setView('.tileContainer', 'x-large')">x-large</button>
+  </section>
+    <section id="filter">Filter:<button onclick="showAll('.project-tile')" id="all">Alle</button>
+    <button onclick="setFilter('.Website, .Sonstiges', 'noshow')">Emails</button>
+    <button onclick="setFilter('.Email, .Sonstiges', 'noshow')">Websites</button>
+      <button onclick="setFilter('.Email, .Website', 'noshow')">Print</button>
+  </section>
+</section>
+
+<section class="flex-container projects schatten white" id="test"></section>
+ <template id="tiles">
+   <section id="tileContainer" class="project-tile tileContainer large">
+  <section class="subheader" id="subheader"></section>
+  <section class="project-pic schatten white" id="projectPic"></section>
+  <section class="short-desc">
+      <section class="challenges">
+        <h3 id="aufgabe">Aufgabe</h3>
+        <p id="aufgabeShort"></p>
+        <h3 id="herausforderung">Herausforderung</h3>
+        <p id="herausforderungText"></p>
+        <section class="text schatten white" id="aufgabeText"></section>
+            <button id="more"><a href="" id="moreLink" class="moreLink">Mehr...</a></button>
+            </section>'
+      </section>
+
+  </section>
+
+ </template>   
+ </section>
+<!--End Project-Section -->
+<section class="headline white"><h2>Skills</h2></section>
+<section class="skillbar white">
+<!---Beginn BarChart-->    
+<section class="border">
+    <section class="scale">
+      <span class="skala white"><p>|</p><p>|</p><p>|</p><p>|</p><p>|</p><p>|</p><p>|</p><p>|</p><p>|</p><p><strong style="color:black; font-size:1.3em; font-weight:700;">10%</strong></p></span>
+       <span class="skala white"><p>|</p><p>|</p><p>|</p><p>|</p><p>|</p><p>|</p><p>|</p><p>|</p><p>|</p><p><strong style="color:black; font-size:1.3em; font-weight:700;">20%</strong></p></span>
+       <span class="skala white"><p>|</p><p>|</p><p>|</p><p>|</p><p>|</p><p>|</p><p>|</p><p>|</p><p>|</p><p><strong style="color:black; font-size:1.3em; font-weight:700;">30%</strong></p></span>
+       <span class="skala white"><p>|</p><p>|</p><p>|</p><p>|</p><p>|</p><p>|</p><p>|</p><p>|</p><p>|</p><p><strong style="color:black; font-size:1.3em; font-weight:700;">40%</strong></p></span>
+       <span class="skala white"><p>|</p><p>|</p><p>|</p><p>|</p><p>|</p><p>|</p><p>|</p><p>|</p><p>|</p><p><strong style="color:black; font-size:1.3em; font-weight:700;">50%</strong></p></span>
+       <span class="skala white"><p>|</p><p>|</p><p>|</p><p>|</p><p>|</p><p>|</p><p>|</p><p>|</p><p>|</p><p><strong style="color:black; font-size:1.3em; font-weight:700;">60%</strong></p></span>
+       <span class="skala white"><p>|</p><p>|</p><p>|</p><p>|</p><p>|</p><p>|</p><p>|</p><p>|</p><p>|</p><p><strong style="color:black; font-size:1.3em; font-weight:700;">70%</strong></p></span>
+       <span class="skala white"><p>|</p><p>|</p><p>|</p><p>|</p><p>|</p><p>|</p><p>|</p><p>|</p><p>|</p><p><strong style="color:black; font-size:1.3em; font-weight:700;">80%</strong></p></span>
+       <span class="skala white"><p>|</p><p>|</p><p>|</p><p>|</p><p>|</p><p>|</p><p>|</p><p>|</p><p>|</p><p><strong style="color:black; font-size:1.3em; font-weight:700;">90%</strong></p></span>
+       <span class="skala white"><p>|</p><p>|</p><p>|</p><p>|</p><p>|</p><p>|</p><p>|</p><p>|</p><p>|</p><p><strong style="color:black; font-size:1.3em; font-weight:700;">100%</strong></p></span>
+       <section class="balken white" style="width:77%; animation-delay:1500ms;">
+        <section class="balken-desc white"> <p>html</p><p>77%</p> </section>
+        </section>
+         <section class="balken white" style="width:69%;">
+         <section class="balken-desc white"> <p>css</p><p>69%</p> </section>
+        </section>  
+        <section class="balken white" style="width:41%;">
+            <section class="balken-desc white"> <p>javascript</p><p>41%</p> </section>
+            </section> 
+            <section class="balken white" style="width:70%;">
+                <section class="balken-desc white"> <p id="bildbearbeitung">bildbearbeitung</p><p>70%</p> </section>
+                </section>
+                <section class="balken white" style="width:90%;">
+                    <section class="balken-desc white"> <p>marketing</p><p>90%</p> </section>
+                    </section>
+                    <section class="balken white" style="width:100%;">
+                        <section class="balken-desc white"> <p id="kreativ">kreativität</p><p>100%</p> </section>
+                        </section>
+         </section>
+  </section>
+<!--End BarChart-->
+</section>
+<section class="flex-container skills">
+  <section class="skillset schatten white">
+    <h2>Skill</h2>
+    <ul>
+      <li>Skill</li>
+      <li>Skill</li>
+    </ul>
+  </section>
+   <section class="skillset schatten white">
+    <h2>Skill</h2>
+    <ul>
+      <li>Skill</li>
+      <li>Skill</li>
+    </ul>
+  </section>
+   <section class="skillset schatten white">
+    <h2>Skill</h2>
+    <ul>
+      <li>Skill</li>
+      <li>Skill</li>
+    </ul>
+  </section>
+    
+</section>
+<section class="headline"><h2>Stärken</h2></section>
+<section class="flex-container">
+  <section class="strength schatten white">
+    <h4 id="strength">Stärken</h4>
+    <h3 id="strength-header">Das kann ich...</h3>
+    <p id="strength1">Stärke1</p>
+    <p id="strength2">Stärke2</p>
+    <p id="strength3">Stärke3</p>
+  </section>
+   <section class="strength schatten white weak">
+    <h4 id="weakness">Schwächen</h4>
+    <h3 id="weakness-header">Das eher nicht...</h3>
+    <p id="weakness1">Schwäche1</p>
+    <p id="weakness2">Schwäche2</p>
+    <p id="weakness3">Schwäche3</p>
+  </section>
+</section>
+<section class="headline" ><h2 id="contact">Kontakt</h2></section>
+<section class="flex-container contact">Kontakt</section>
+
+  </section>
+ 
+        <script src="" async defer></script>
+        <script src="js/buttontestList.js"></script>
+        <!--<script src="js/buttontest.js"></script>-->
+        <script src="js/start.js"></script>
+        
+    </body>
+</html>

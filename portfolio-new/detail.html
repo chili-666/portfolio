@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+                <link rel="stylesheet" href="css/detail.css">
+        
+        <script src="js/getDetail.js"></script>
+        <!--<script src="js/selectProject.js"></script>-->
+        <script src="js/buttontestList.js"></script> 
+        <script src="js/projectListEN.js"></script>
+        <script src="js/darkLightMode.js"></script>
+    </head>
+    <body class="white">
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+     <template id="complete">
+        <section class="white">
+            <section class="navbar white"><button><a href="index.html" id="backlink">Zurück</a></button><button  onclick="darkMode('.white','dark')" id="dark">DarkMode</button><button onclick="lightMode('.dark','white')" class="button noshow" id="light">LightMode</button>
+  
+            
+            </section>
+          <section class="hero">
+            <section class="hero-pic-container">
+          <div class="hero-pic pic" id="hero-pic"></div>
+            </section>
+           <section class="aufgabe-cont"><h2 class="name">Name</h2>
+             <section class="aufgabe schatten">Aufgabe
+             <p class="aufgabeText">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </br>
+             </br>
+               
+          At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </br></br>
+               
+          At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergrn, no sea takimata sanctus est Lorem ipsum dolor sitt amemt.</p></section>
+            </section>
+          
+          </section>
+          <section class="project-meta schatten">
+            <section class="type">Type</section>
+            <section class ="date">Datum</section>
+              <section class="link">Link</section>
+          </section>
+           
+          <section class="detailBody">
+            <div id="splitplace"></div>
+              <!--<template id="split"> 
+                  <section class="before-after">
+                  <div class="splitview">
+                    <div class="panel bottom">
+                        <div class="content">
+                          <div class="overlay bottom">
+                            <p>Nachher</p>
+                            </div>
+                         <span id="after"></span>
+                          
+                        </div>
+                    </div>   
+                    <div class="panel top">
+                        <div class="content">
+                         <div class="overlay top">
+                            <p>Vorher</p>
+                            </div>
+                         <span class="before"></span>
+                        
+                        </div>
+                    </div>   
+                  <div class="handle" id="handle"></div>
+                 
+                </div>
+                    </section>
+                <section class="before-after-mobile">
+                  <section id="mob-before"></section>
+                    <section id="mob-after"></section>
+                  
+                  </section>
+                  </template>-->
+                <template id="split">
+                  <section class="beforeafter">
+                  <section class="before-after-buttons">
+                    <button onclick="vorherNachher('before', 'after')" class="" id="vorherbutton">Vorher</button>
+                    <button onclick="vorherNachher('after', 'before')" class="" id="nachherbutton">Nachher</button>
+                  </section>
+                  <section class="before" id="before"></section>
+                  <section class="after noshow" id="after"></section>
+                </section>
+                </template>
+                <template class="singlepic" id="singlepic"> 
+                 <!-- <section class="full-pic" id="fullpic"></section>-->
+                                      </template>
+                <template class="gallery" id="gallery">
+                  <!--<section class="gallery" id="galleryPics">
+                   </section>-->
+                 
+                  </template>
+                  
+                  <section class ="longTextout" id="longTextOut">
+                      <section class="heraus-container schatten">
+                          <section class="challenge"><h3>Die Herausforderung</h3>
+                          <section class="herausforderung"></section>
+                                             </section>
+                            
+                       </section>
+                       <section class="longText">
+                        
+                       </section>
+                  </section>
+         
+          </section>
+             
+           
+            
+            
+          </section> 
+     </template>
+<section id="detailContent"></section>
+        <script src="" async defer></script>
+        <!-- Auskommentiert um Fehler in Console zu vermeiden, muss später wieder rein für SplitView
+        <script src="js/split.js"></script>-->
+        
+    </body>
+    
+</html>

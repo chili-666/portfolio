@@ -1,0 +1,110 @@
+.border { 
+    border: 1px solid black;
+    padding:10px;
+    width:100%;
+        }
+    
+    .scale {
+      display:grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+      grid-template-rows: auto auto auto auto auto auto auto auto auto auto;
+      grid-template-areas: "10 20 30 40 50 60 70 80 90 100";
+     }
+    
+    .skala {
+      font-family: Helvetica, sans-serif;
+      font-size:0.8em;
+      display:flex;
+      justify-content: space-around;
+      flex-direction:row;
+      padding-bottom:0px;
+      border-bottom:1px solid black;
+      margin-bottom:0px;
+        }
+    .skala p {
+      padding-bottom:0px;
+      line-height:0.9em;
+      margin-bottom:0px;
+      color:#AFA8BA;
+    }
+    
+    .skala.dark {
+        color:#d9d9df;
+        border-bottom:1px solid white !important;
+    }
+
+    .skala.dark p {
+        color:d9d9df;
+    }
+    .skala.dark strong {color:white !important;}
+    
+    .balken.white {
+      background-image: linear-gradient(to right, white, #595959);
+      border-bottom:2px solid white;
+      margin-top:0px;
+      margin-bottom:0px;
+      padding-top:0px;
+      padding-bottom:0px;
+      display:grid;
+      grid-column:1 / span 10;
+      animation-name: example;
+      animation-duration: 4s;  
+    }
+
+    .balken.dark {
+        background-color:purple !important;
+        /*background-image: linear-gradient(to right, lime, white);*/
+        border-bottom:2px solid #595959;
+        margin-top:0px;
+      margin-bottom:0px;
+      padding-top:0px;
+      padding-bottom:0px;
+      display:grid;
+      grid-column:1 / span 10;
+      animation-name: example;
+      animation-duration: 4s; 
+          }
+    
+    /*.balken:nth-child(even) {
+      background-image: linear-gradient(to right, white, #595959);
+    }*/
+    
+    @keyframes example {
+      0%   {width:0%}
+      100% {left:0px; top:0px;}
+    }
+    
+    .balken-desc.white {
+      display:flex;
+      flex-direction:row;
+      justify-content: space-between;
+      color:black;
+      font-family:'Roboto', sans-serif;
+      padding:0px;
+      background-color:transparent;
+    }
+
+    .balken-desc.dark {
+        display:flex;
+        flex-direction:row;
+        justify-content: space-between;
+        color:#ffffff;
+        font-family:'Roboto', sans-serif;
+        padding:0px;
+        background-color:transparent;
+        background-image: linear-gradient(to right, #595959, white);      }
+    
+    .balken-desc.white p:nth-child(even) {
+      color: #ffffff;
+      margin-right:5px;
+    }
+
+    .balken-desc.dark p:nth-child(even) {
+      color: black;
+      margin-right:5px;
+    }
+
+    @media screen and (max-width:990px) {
+      .skala {
+        font-size:0.3em;
+      }
